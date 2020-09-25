@@ -1,0 +1,210 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;    
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 62% 100%;
+    background-position: right; 
+}
+.textContainer {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 70%;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column;
+    justify-content: center; */
+    padding: 0 0 0 6%;
+    height: 100%;
+}
+.logo {
+    width: 26vw;
+}
+.logoImg {
+    align-self: center;
+}
+.name {
+    width: 47%;
+    margin-right: 2%;
+}
+.email{
+    width: 96.8%;
+    display: block;
+    margin: 2% 0;
+}
+form {
+    flex-wrap: wrap;
+    display: flex;
+    width: 65%;
+}
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 3vw;
+    margin-bottom: 0;
+    opacity: 0.8;
+}
+p {
+    font-weight: bold;
+    font-size: 1.3vw;
+    opacity: 0.8;
+    margin: 20px 0;
+}
+::placeholder {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8vw;
+    opacity: 1; 
+  }
+  input:focus{
+    outline: none;
+    font-weight: 600;
+}
+input[type=submit] {
+    border: 1px solid rgb(54, 54, 54);
+    padding: 3% 17%;
+    height: auto;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 3%;
+}
+  input {
+      background:transparent;
+      font-size: 1.1vw;
+      height: 2.5vw;
+      font-weight: 600;
+      border: none;
+      border-bottom: 1px solid rgb(54, 54, 54);
+  }
+   @media (max-width: 1199.98px) { 
+      body {
+        background-size: 100% 100%;
+      }
+      .textContainer {
+          width: 83%;
+      }
+      h1 {
+          font-size: 35px;
+      }
+      p {
+          font-size: 17px;
+      }
+      form {
+          width: 530px;
+      }
+      .logo {
+        width: 352px;
+      }
+      input {
+          font-size: 15px;
+          height: 40px;
+      }
+      ::placeholder {
+          font-size: 11px;
+      }
+      input[type=submit]{
+        padding: 16px 90px;
+      }
+  }
+  @media (max-width: 768px) { 
+      body {
+          background-image: url("img/background2.jpg");
+      }    
+      h1 {
+          font-size: 28px;
+          width: 100%;
+          letter-spacing: 3px;
+      }    
+      form {
+          width: 520px;
+      }
+      input[type="submit"] {
+          padding: 12px 85px;
+      }
+      .textInBox {
+          position: relative;
+          width: 100%;
+          height: 55%;
+          
+      }
+      .logoImg {
+         position: relative;
+      }
+      .whiteBox {
+          width: 100%;
+          height: 450px;
+         background-color: white;
+         opacity: 0.5;
+         position: absolute;
+      }
+      .textContainer {
+          position: absolute;
+          width: 88%;
+      }
+  }
+  @media (max-width: 575.98px) { 
+      body {
+        background-image: url("img/background3.jpg");
+        background-position: left;
+      }
+      h1 {
+          font-size: 25px;
+          margin: 40px 0;
+      }
+      p {
+          font-size: 15px;
+          margin: 0 35px;
+      }
+      input {
+          height: 60px;
+      }
+      .container {
+          padding: 0;
+      }
+      .whiteBox {
+          height: 100%;
+      }
+      form {
+          width: 70%;
+          margin: 0 auto;
+      }
+      .textInBox {
+          height: 91%;
+          text-align: center;
+      }
+      .textContainer {
+          width: 100%;
+          text-align: center;
+          margin:0 auto;
+      }
+      .name {
+          display: block;
+          margin: 0;
+          width: 100%;
+      }
+      .email {
+          width:100%;
+      }
+      .logoImg {
+          width: 100%;
+          text-align: center;
+      }
+      .logo {
+          font-size: 65vw;
+      }
+    
+    input[type="submit"] {
+        width: 100%;
+    }
+   }
